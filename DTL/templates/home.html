@@ -6,7 +6,8 @@
     </div>
     <div>
         <h3>Add two numbers</h3>
-        <form action="add">
+        <form action="add/" method="post">
+            {% csrf_token %}
             Enter 1st number: <input type="text" name="number1" id=""><br><br>
             Enter 2nd number: <input type="text" name="number2" id=""><br><br>
             <input type="submit" value="Submit">
